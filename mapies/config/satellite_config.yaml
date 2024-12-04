@@ -1,0 +1,31 @@
+version: 1
+# Default config, but the user can take this template and create their own or just pass individual variables
+
+viirs:
+    variables:
+        time_variable: "Scan_Start_Time"
+        lon_variable: "Longitude"
+        lat_variable: "Latitude"
+        obs_variable: "Aerosol_Optical_Thickness_550_Land_Ocean_Best_Estimate" 
+    da: 
+        obsid: 34
+        uncertainty_constants: [0.2, 0.05, 0.02]
+        grid_repr: "rotated"
+
+tropomi:
+    variables:
+        time_variable: "delta_time"
+        lon_variable: "longitude"
+        lat_variable: "latitude"
+        obs_variable: "nitrogendioxide_tropospheric_column"
+
+cloudsat:
+    variables:
+        time_variable: "time"
+        lon_variable: "Longitude"
+        lat_variable: "Latitude"
+        obs_variable: "RO_liq_effective_radius"
+
+
+
+
